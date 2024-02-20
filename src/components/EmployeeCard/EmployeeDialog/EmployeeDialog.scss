@@ -3,6 +3,11 @@
   display: flex;
   flex-direction: column;
 
+  .title {
+    margin-left: 5rem;
+    padding-top: 0;
+  }
+
   .MuiTextField-root {
     margin-bottom: 1rem;
     font-size: 1rem;
@@ -19,4 +24,8 @@
       min-width: 7rem;
     }
   }
+}
+
+.dialog-buttons {
+  padding-right: 6rem;
 }

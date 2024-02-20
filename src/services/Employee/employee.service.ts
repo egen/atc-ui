@@ -36,6 +36,21 @@ const EmployeeService = {
       throw e;
     }
   },
+
+  async deleteEmployees(id: string) {
+    try {
+      const { data } = await axios.delete(`${apiBaseUrl}/v1/employee/${id}`, {
+        headers: {
+          Authorization: "abc",
+        },
+      });
+
+      return data;
+    } catch (e) {
+      console.log(e);
+      throw e;
+    }
+  },
 };
 
 export default EmployeeService;

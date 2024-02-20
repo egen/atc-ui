@@ -54,7 +54,7 @@ function EmployeeDialog(props: {
   return (
     <Dialog open={openDialog} onClose={onClose}>
       <div className="dialog-container">
-        <DialogTitle>Edit Employee</DialogTitle>
+        <DialogTitle className="title">Edit Employee</DialogTitle>
         <div className="details">
           <p>Name</p>
           <TextField
@@ -87,7 +87,7 @@ function EmployeeDialog(props: {
           />
         </div>
       </div>
-      <div>
+      <div className="dialog-buttons">
         <DialogActions>
           <Button onClick={onSaveClick}>Save</Button>
           <Button onClick={onClose}>Cancel</Button>

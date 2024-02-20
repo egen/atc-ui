@@ -28,11 +28,14 @@ function Employee() {
   };
 
   return (
-    <div className="employee-cards-container">
-      {employee.map((item: any) => (
-        <EmployeeCard details={item} onRefresh={handleOnRefresh} />
-      ))}
-    </div>
+    <>
+      <h1>Employee Service</h1>
+      <div className="employee-cards-container">
+        {employee.map((item: any) => (
+          <EmployeeCard details={item} onRefresh={handleOnRefresh} />
+        ))}
+      </div>
+    </>
   );
 }
 
