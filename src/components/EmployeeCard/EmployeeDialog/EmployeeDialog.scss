@@ -1,0 +1,22 @@
+.dialog-container {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+
+  .MuiTextField-root {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+
+  .details {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+
+    p {
+      margin-right: 0.5rem;
+      font-weight: 600;
+      min-width: 7rem;
+    }
+  }
+}

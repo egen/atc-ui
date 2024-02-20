@@ -5,7 +5,12 @@ const CatService = {
   async getCats() {
     try {
       const { data } = await axios.get(
-        `${apiBaseUrl}/v1/images/search?limit=50`
+        `${apiBaseUrl}/v1/images/search?limit=50`,
+        {
+          headers: {
+            Authorization: "abc",
+          },
+        }
       );
       return data;
     } catch (e) {
