@@ -1,0 +1,10 @@
+.dialog-container {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+
+  .title {
+    margin-left: 5rem;
+    padding-top: 0;
+  }
+}

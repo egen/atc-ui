@@ -1,0 +1,10 @@
+.employee-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 4rem;
+  cursor: pointer;
+
+  & :hover {
+    background-color: beige;
+  }
+}
